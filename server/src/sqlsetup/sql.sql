@@ -1,0 +1,9 @@
+CREATE TABLE `user` (
+	`id` VARCHAR(32) NOT NULL,
+	`name` VARCHAR(32) CHARACTER SET utf8 COLLATE utf8_czech_ci NOT NULL ,
+	`email` VARCHAR(32) NOT NULL ,
+	`icon` VARCHAR(128) NOT NULL ,
+	`last_visited` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+	PRIMARY KEY (`id`),
+	UNIQUE (`email`)
+) ENGINE = InnoDB;
