@@ -22,7 +22,7 @@ export default connect(null, (dispatch) => ({
 	fetch_user: () =>
 		dispatch((dispatch) =>
 			axios // connect to backend and get information about current sesssion's user
-				.get("/user/info")
+				.get("/api/user/info")
 				.then((res) => dispatch({ type: "GET_USER", payload: res.data }))
 		),
 }))(App)

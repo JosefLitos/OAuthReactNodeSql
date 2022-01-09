@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { connect } from "react-redux"
-import { Link } from "react-router-dom"
 
 function Profile(props) {
 	const [state, setState] = useState({
@@ -26,7 +25,7 @@ function Profile(props) {
 				{state.email}
 			</div>
 			<a
-				href="/user/delete"
+				href="/api/user/delete"
 				className="red"
 				style={{ margin: "10%", padding: "10px", fontSize: "20px", color: "white" }}
 			>

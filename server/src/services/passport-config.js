@@ -17,7 +17,7 @@ function setup() {
 			{
 				clientID: process.env.GOOGLE_CLIENT_ID,
 				clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-				callbackURL: "/user/gcallback",
+				callbackURL: "/api/user/gcallback",
 				proxy: true,
 			},
 			(accessToken, refreshToken, profile, done) => {
