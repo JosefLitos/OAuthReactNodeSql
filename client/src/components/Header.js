@@ -15,14 +15,14 @@ function Header(props) {
 			case false:
 				return (
 					<li>
-						<a href="/user/login">Sign up/in</a>
+						<a href="/api/user/login">Sign up/in</a>
 					</li>
 				)
 			default:
 				return (
 					<React.Fragment>
 						<li>
-							<a href="/user/logout">Log out</a>
+							<a href="/api/user/logout">Log out</a>
 						</li>
 						<li>
 							<Link to="/user">Profile</Link>

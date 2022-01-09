@@ -1,5 +1,5 @@
 module.exports = (app) =>
 	app.use(
-		"/user/*",
+		"/api/user/*",
 		require("http-proxy-middleware").createProxyMiddleware({ target: "http://localhost:5000/" })
 	)
